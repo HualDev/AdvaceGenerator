@@ -1,0 +1,83 @@
+:root{
+    --lightCyan: hsl(193, 38%, 86%);
+    --neonGreen: hsl(150, 100%, 66%);
+    --grayishBlue: hsl(217, 19%, 38%);
+    --darkGrayishBlue: hsl(217, 19%, 24%);
+    --darkBlue: hsl(218, 23%, 16%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkBlue);
+}
+
+.container{
+    background-color: var(--darkGrayishBlue);
+    width: 90%;    
+    border-radius: 1rem;
+    padding: 3rem 1.5rem; 
+}
+
+h1{
+    text-align: center;
+    color: var(--neonGreen);
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+h2{
+    text-align: center;
+    color: var(--lightCyan);
+}
+
+.divider{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 3rem;
+}
+
+.circle{
+    background-color: var(--neonGreen);
+    padding: 1rem;
+    border-radius: 50%;
+    margin: -1.8rem auto 0;
+    cursor: pointer;
+}
+
+.circle:hover{
+    box-shadow: 0 0 2rem var(--neonGreen);
+}
+
+@media (min-width:40rem) {
+    .container{
+        width: 50%;        
+    }
+
+    h1, h2{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width:60rem) {
+    .container{
+        width: 35%;               
+    }
+
+}
+
+
+
